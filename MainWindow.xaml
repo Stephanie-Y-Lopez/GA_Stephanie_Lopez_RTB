@@ -1,0 +1,28 @@
+﻿<Window x:Class="GA_Stephanie_Lopez_RTB.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GA_Stephanie_Lopez_RTB"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <RichTextBox x:Name="rtbDisplay">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="RichTextBox"/>
+                    <InlineUIContainer>
+                        <TextBox x:Name="txtDisplayMessage" TextWrapping="Wrap" Text="TextBox" Width="120"/>
+                    </InlineUIContainer>
+                    <InlineUIContainer>
+                        <Label Content="Type a Message"/>
+                    </InlineUIContainer>
+                    <InlineUIContainer>
+                        <Button x:Name="btnDisplayMessage" Content="Display" Click="btnDisplayMessage_Click"/>
+                    </InlineUIContainer>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+
+    </Grid>
+</Window>
