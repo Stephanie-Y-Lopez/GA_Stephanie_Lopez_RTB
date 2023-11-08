@@ -29,9 +29,27 @@ namespace GA_Stephanie_Lopez_RTB
         {
             string message = txtDisplayMessage.Text;
             rtbDisplay.Text = message;
+        }
 
+        private void btnAppend_Click(object sender, RoutedEventArgs e)
+        {
+            string messageToAppend = txtAppendMessage.Text;
 
-        } // btnDisplayMessage_Click
-    } // class
+            rtbDisplay.Text += "\n" + messageToAppend;
+        }
 
-} // namespace
+        private void btnAppendNewRtb_Click(object sender, RoutedEventArgs e)
+        {
+            string fullMessage = rtbNewRtb.Text;
+
+            rtbDisplay.Text += "\n" + fullMessage;
+        }
+
+        private void btnClear_Click(object sender, RoutedEventArgs e)
+        {
+            rtbNewRtb.Text = "";
+            rtbDisplay.Text = "";
+        }
+    }
+
+}
