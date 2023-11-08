@@ -29,6 +29,9 @@ namespace GA_Stephanie_Lopez_RTB
         {
             string message = txtDisplayMessage.Text;
             rtbDisplay.Text = message;
-        }
-    }
-}
+
+
+        } // btnDisplayMessage_Click
+    } // class
+
+} // namespace
